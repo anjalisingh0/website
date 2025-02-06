@@ -1,16 +1,49 @@
-/* Optional custom styling */
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-h1, h2 {
-    color: #0044cc;
-}
-
-.navbar {
-    margin-bottom: 20px;
-}
-
+/* Container for aligning photo and text */
 .container {
-    margin-top: 20px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align the content to the left */
+    gap: 20px; /* Space between the photo and text */
+    max-width: 900px; /* Optional: Set a maximum width to prevent stretching */
+    padding: 20px; /* Optional: Add some padding around the content */
+}
+
+/* Photo container styles */
+.photo-container {
+    width: 2000px; /* Resize the photo container to a smaller size */
+    height: 500px;
+    overflow: hidden; /* Ensure the image fits within the container */
+}
+
+/* Profile photo styles */
+.profile-photo {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: 100%; /* Ensure the image takes up the full height of the container */
+    object-fit: cover; /* Crop the image to cover the container */
+   /* border-radius: 50%; /* Make the photo circular */
+}
+
+/* Title styling */
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
 }
