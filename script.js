@@ -1,1 +1,7 @@
-console.log("Welcome to Anjali's website!");
+// JavaScript to toggle active class for the navigation links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+    });
+});

@@ -1,11 +1,16 @@
+/* Optional custom styling */
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    background-color: #f3f4f6;
-    color: #333;
-    padding: 2rem;
-  }
-  h1 {
-    color: #2563eb;
-  }
-  
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #0044cc;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
