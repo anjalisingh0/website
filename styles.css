@@ -3,11 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f0f0f0;
+}
+
+/* Navbar specific styles */
+#navbar-placeholder {
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 /* Container for aligning photo and text */
@@ -18,12 +21,13 @@ body {
     gap: 20px; /* Space between the photo and text */
     max-width: 900px; /* Optional: Set a maximum width to prevent stretching */
     padding: 20px; /* Optional: Add some padding around the content */
+    margin-top: 60px; /* Push content down to make space for navbar */
 }
 
 /* Photo container styles */
 .photo-container {
     width: 2000px; /* Resize the photo container to a smaller size */
-    height: 500px;
+    height: 400px;
     overflow: hidden; /* Ensure the image fits within the container */
 }
 
@@ -32,7 +36,6 @@ body {
     width: 100%; /* Ensure the image takes up the full width of the container */
     height: 100%; /* Ensure the image takes up the full height of the container */
     object-fit: cover; /* Crop the image to cover the container */
-   /* border-radius: 50%; /* Make the photo circular */
 }
 
 /* Title styling */
