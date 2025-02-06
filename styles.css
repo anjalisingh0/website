@@ -6,13 +6,6 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Navbar specific styles */
-#navbar-placeholder {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
 /* Container for aligning photo and text */
 .container {
     display: flex;
