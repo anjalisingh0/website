@@ -6,38 +6,44 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Navbar specific styles */
+#navbar-placeholder {
+    position: fixed;  /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;  /* Added to ensure full-width positioning */
+    width: 100%;
+    z-index: 1000;  /* Added to ensure navbar stays on top */
+}
+
 /* Container for aligning photo and text */
 .container {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
-    justify-content: flex-start; /* Align the content to the left */
-    gap: 20px; /* Space between the photo and text */
-    max-width: 900px; /* Optional: Set a maximum width to prevent stretching */
-    padding: 20px; /* Optional: Add some padding around the content */
-    margin-top: 60px; /* Push content down to make space for navbar */
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    padding: 20px;
+    margin-top: 60px;
 }
 
-/* Photo container styles */
+/* Rest of your CSS remains exactly the same */
 .photo-container {
-    width: 2000px; /* Resize the photo container to a smaller size */
+    width: 2000px;
     height: 400px;
-    overflow: hidden; /* Ensure the image fits within the container */
+    overflow: hidden;
 }
 
-/* Profile photo styles */
 .profile-photo {
-    width: 100%; /* Ensure the image takes up the full width of the container */
-    height: 100%; /* Ensure the image takes up the full height of the container */
-    object-fit: cover; /* Crop the image to cover the container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Title styling */
 h1 {
     font-size: 2rem;
     color: #333;
 }
 
-/* Paragraph styling */
 p {
     font-size: 1.1rem;
     color: #666;
